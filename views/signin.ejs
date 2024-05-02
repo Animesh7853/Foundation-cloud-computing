@@ -8,7 +8,7 @@
 
 <body>
   <%- include('./partials/nav') %>
-
+  <main class="mb-auto" style="flex: 1 0 auto;">
     <div class="container mt-4">
       <form action="/user/signin" method="post">
 
@@ -27,7 +27,9 @@
       </form>
     </div>
     <%- include('./partials/footer') %>
-    <%- include('./partials/scripts') %>
+    
+  </main>
+  <%- include('./partials/scripts') %>
 </body>
 
 </html>

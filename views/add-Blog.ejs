@@ -10,7 +10,7 @@
     <%- include('./partials/nav') %>
 
         <%= JSON.stringify(user) %>
-
+        <main class="mb-auto" style="flex: 1 0 auto;">
             <div class="container mt-3">
                 <form action="/blog" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
@@ -40,8 +40,11 @@
                     
                 </form>
             </div>
+            
             <%- include('./partials/footer') %>
             <%- include('./partials/scripts') %>
+        </main>
+    
 </body>
 
 </html>
